@@ -1,15 +1,31 @@
 
-alert("Bienvenido")
+let lista = document.getElementById("lista");
+let moneda = ["dolar", "real", "euro", "libra"]
 
-const monedas = [
+
+moneda.forEach(item => {
+    let opcion = document.createElement("option");
+    opcion.innerHTML = item;
+    lista.append(opcion)
+})
+
+let lista2 = document.getElementById("lista2");
+moneda.forEach(item => {
+    let opcion = document.createElement("option");
+    opcion.innerHTML = item;
+    lista2.append(opcion)
+})
+
+
+let monedas = [
     { nombre: "dolar", precio: 190, sign: "$" },
     { nombre: "real", precio: 37, sign: "R$"},
     { nombre: "euro", precio: 203, sign: "€"},
     { nombre: "libra", precio: 229, sign: "£"}
-]
+];
 
 
-let nombre = prompt("Ingrese la moneda a cotizar: ")
+//let nombre = prompt("Ingrese la moneda a cotizar: ")
 let find = monedas.find(moneda => moneda.nombre === nombre)
 let mensaje = `
 
@@ -20,7 +36,7 @@ let mensaje = `
 alert(mensaje)
 
 
-let opcion = parseInt(prompt("Eliga el tipo de cambio: 1. Dolar 2. Real 3. Euro 4. Libra")) 
+//let opcion = parseInt(prompt("Eliga el tipo de cambio: 1. Dolar 2. Real 3. Euro 4. Libra")) 
 
 while( opcion != 1 && opcion != 2 && opcion != 3 && opcion != 4){
 

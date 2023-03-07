@@ -4,12 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
     <title>Document</title>
 </head>
 <body>
 
-    <h2 style="text-decoration: underline; text-align: center;"> Pre Entrega 2 - Tolosa Carlos </h2>
+    <h2 style="text-decoration: underline; text-align: center;"> Pre Entrega 3 - Tolosa Carlos </h2>
     <h3 style="text-align: center;"> Conversor de divisas </h3>
+   
+    <main class= "principal">
+        <div class="moneda1">
+            <div class="moneda1__ingreso">
+                <form class="moneda1__formulario" >
+                    <select class="formulario__seleccionar" id="lista">
+                        <option selected disabled> Selecciona tipo de cambio </option>
+
+                        <input type="number" class="valor">
+                    </select>
+                </form>
+            </div>
+
+            <div class="moneda1__cambio">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrows-left-right" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00b341" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="21" y1="17" x2="3" y2="17" />
+                    <path d="M6 10l-3 -3l3 -3" />
+                    <line x1="3" y1="7" x2="21" y2="7" />
+                    <path d="M18 20l3 -3l-3 -3" />
+                </svg>
+            </div>
+
+            <div class="moneda1">
+                <div class="moneda1__ingreso">
+                    <form class="moneda1__formulario" >
+                        <select class="formulario__seleccionar" id="lista2">
+                            <option selected disabled> Selecciona tipo de cambio </option>
+    
+                            <input type="number" class="valor">
+                        </select>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <script src="./main.js"></script>
 </body>
 </html>
